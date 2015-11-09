@@ -1251,7 +1251,7 @@ void lcd_update()
         u8g.firstPage();
         do
         {
-            u8g.setFont(u8g_font_6x10_marlin);
+			u8g.setFont(u8g_font_6x10_marlin);
             u8g.setPrintPos(125,0);
             if (blink % 2) u8g.setColorIndex(1); else u8g.setColorIndex(0); // Set color for the alive dot
             u8g.drawPixel(127,63); // draw alive dot
@@ -1347,10 +1347,10 @@ void lcd_buttons_update()
 {
 #ifdef NEWPANEL
     uint8_t newbutton=0;
-    if(READ(BTN_EN1)==0)  newbutton|=EN_A;
-    if(READ(BTN_EN2)==0)  newbutton|=EN_B;
+    if(READ(BTN_EN1)==HIGH)  newbutton|=EN_A;
+    if(READ(BTN_EN2)==HIGH)  newbutton|=EN_B;
   #if BTN_ENC > 0
-    if((blocking_enc<millis()) && (READ(BTN_ENC)==0))
+    if((blocking_enc<millis()) && (READ(BTN_ENC)==HIGH))
         newbutton |= EN_C;
   #endif
     buttons = newbutton;

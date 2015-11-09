@@ -26,10 +26,14 @@
 #define EN_A (1<<BLEN_A)
 #define EN_B (1<<BLEN_B)
 #define EN_C (1<<BLEN_C)
-#define encrot0 0
-#define encrot1 2
-#define encrot2 3
-#define encrot3 1
+//#define encrot0 0
+//#define encrot1 2
+//#define encrot2 3
+//#define encrot3 1
+#define encrot0 1
+#define encrot1 3
+#define encrot2 2
+#define encrot3 0
 #define LCD_CLICKED (buttons&EN_C)
 #endif
 
@@ -69,7 +73,7 @@
 #define LCD_STR_BEDTEMP     "\xFE"
 #define LCD_STR_THERMOMETER "\xFF"
 
-#define FONT_STATUSMENU	u8g_font_6x9
+#define FONT_STATUSMENU	u8g_font_6x10_marlin
 
 int lcd_contrast;
 
@@ -402,7 +406,7 @@ static void _drawmenu_setting_edit_generic(uint8_t row, const char* pstr, char p
 void lcd_implementation_drawedit(const char* pstr, char* value)
 {
 		u8g.setPrintPos(0 * DOG_CHAR_WIDTH_LARGE, (u8g.getHeight() - 1 - DOG_CHAR_HEIGHT_LARGE) - (1 * DOG_CHAR_HEIGHT_LARGE) - START_ROW );
-		u8g.setFont(u8g_font_9x18);
+		u8g.setFont(u8g_font_6x10_marlin);
 		lcd_printPGM(pstr);
 		u8g.print(':');
 		u8g.setPrintPos((14 - strlen(value)) * DOG_CHAR_WIDTH_LARGE, (u8g.getHeight() - 1 - DOG_CHAR_HEIGHT_LARGE) - (1 * DOG_CHAR_HEIGHT_LARGE) - START_ROW );

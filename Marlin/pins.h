@@ -1280,14 +1280,15 @@
      //LCD Pins
      #ifdef DOGLCD
        // Pins for DOGM SPI LCD Support
-       #define DOGLCD_A0  30
-       #define DOGLCD_CS  29
-       // GLCD features
-       #define LCD_CONTRAST 1
+       #define DOGLCD_A0 17 
+       #define DOGLCD_CS 28 
+		#define LCD_PINS_RS			28 
+		#define LCD_PINS_ENABLE		17
+		#define LCD_PINS_D4			30 
        // Uncomment screen orientation
          // #define LCD_SCREEN_ROT_0
          // #define LCD_SCREEN_ROT_90
-       #define LCD_SCREEN_ROT_180
+		#define LCD_SCREEN_ROT_0
          // #define LCD_SCREEN_ROT_270
        #else // standard Hitachi LCD controller
        #define LCD_PINS_RS        4

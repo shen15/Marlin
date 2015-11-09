@@ -1,0 +1,4 @@
+15+ malzi v2.0 pcb
+clk ->> 30
+sda ->> 17
+cs  ->> 28
