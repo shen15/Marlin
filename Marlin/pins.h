@@ -1276,7 +1276,7 @@
  #ifdef ULTRA_LCD
    #ifdef NEWPANEL
      //we have no buzzer installed
-     #define BEEPER -1
+     #define BEEPER	27 
      //LCD Pins
      #ifdef DOGLCD
        // Pins for DOGM SPI LCD Support

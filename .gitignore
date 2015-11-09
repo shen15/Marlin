@@ -6,3 +6,6 @@ applet/
 *.bak
 *.DS_Store
 *.idea
+_vm
+*.suo
+*.vcxproj
