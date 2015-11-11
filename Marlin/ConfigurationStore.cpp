@@ -59,6 +59,7 @@ void Config_StoreSettings()
   EEPROM_WRITE_VAR(i,add_homeing);
   #ifdef DELTA
   EEPROM_WRITE_VAR(i,endstop_adj);
+  EEPROM_WRITE_VAR(i, delta_r);
   #endif
   #ifndef ULTIPANEL
   int plaPreheatHotendTemp = PLA_PREHEAT_HOTEND_TEMP, plaPreheatHPBTemp = PLA_PREHEAT_HPB_TEMP, plaPreheatFanSpeed = PLA_PREHEAT_FAN_SPEED;
@@ -145,7 +146,8 @@ void Config_PrintSettings()
     SERIAL_ECHO_START;
     SERIAL_ECHOLNPGM("Home offset (mm):");
     SERIAL_ECHO_START;
-    SERIAL_ECHOPAIR("  M206 X",add_homeing[0] );
+    //SERIAL_ECHOPAIR("  M206 X",add_homeing[0] );
+    SERIAL_ECHOPAIR("  M206 X",delta_r);
     SERIAL_ECHOPAIR(" Y" ,add_homeing[1] );
     SERIAL_ECHOPAIR(" Z" ,add_homeing[2] );
     SERIAL_ECHOLN("");
@@ -200,7 +202,8 @@ void Config_RetrieveSettings()
         EEPROM_READ_VAR(i,add_homeing);
         #ifdef DELTA
         EEPROM_READ_VAR(i,endstop_adj);
-        #endif
+		EEPROM_READ_VAR(i, delta_r); 
+       #endif
         #ifndef ULTIPANEL
         int plaPreheatHotendTemp, plaPreheatHPBTemp, plaPreheatFanSpeed;
         int absPreheatHotendTemp, absPreheatHPBTemp, absPreheatFanSpeed;
@@ -236,6 +239,12 @@ void Config_RetrieveSettings()
     #ifdef EEPROM_CHITCHAT
       Config_PrintSettings();
     #endif
+	  delta_tower1_x = -SIN_60*delta_r; // front left tower
+	  delta_tower1_y = -COS_60*delta_r;
+	  delta_tower2_x = SIN_60*delta_r; // front right tower
+	  delta_tower2_y = -COS_60*delta_r;
+	  delta_tower3_x = 0.0; // back middle tower
+	  delta_tower3_y = delta_r;
 }
 #endif
 
@@ -265,6 +274,7 @@ void Config_ResetDefault()
     add_homeing[0] = add_homeing[1] = add_homeing[2] = 0;
 #ifdef DELTA
     endstop_adj[0] = endstop_adj[1] = endstop_adj[2] = 0;
+	delta_r = DELTA_RADIUS;
 #endif
 #ifdef ULTIPANEL
     plaPreheatHotendTemp = PLA_PREHEAT_HOTEND_TEMP;

@@ -305,7 +305,7 @@ inline void LiquidCrystalRus::command(uint8_t value) {
         send(0xb5,HIGH); // ╦
       else 
         send(pgm_read_byte_near(utf_recode + value + (utf_hi_char<<6) - 0x10), HIGH);
-    }    
+    }   
   } else send(out_char, HIGH);
 #if defined(ARDUINO) && ARDUINO >= 100
   return 1; // assume success 

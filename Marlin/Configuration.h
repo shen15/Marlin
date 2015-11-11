@@ -109,7 +109,7 @@
 #define DELTA_DIAGONAL_ROD 324//220.32//215.78 // 215.5//217mm
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
-#define DELTA_RADIUS	136 
+#define DELTA_RADIUS	175	
 
 // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
 #define DELTA_PRINTABLE_RADIUS 100.0
@@ -117,12 +117,12 @@
 // Effective X/Y positions of the three vertical towers.
 #define SIN_60 0.8660254037844386
 #define COS_60 0.5
-#define DELTA_TOWER1_X -SIN_60*DELTA_RADIUS // front left tower
-#define DELTA_TOWER1_Y -COS_60*DELTA_RADIUS
-#define DELTA_TOWER2_X SIN_60*DELTA_RADIUS // front right tower
-#define DELTA_TOWER2_Y -COS_60*DELTA_RADIUS
-#define DELTA_TOWER3_X 0.0 // back middle tower
-#define DELTA_TOWER3_Y DELTA_RADIUS
+//#define delta_tower1_x -SIN_60*DELTA_RADIUS // front left tower
+//#define delta_tower1_y -COS_60*DELTA_RADIUS
+//#define delta_tower2_x SIN_60*DELTA_RADIUS // front right tower
+//#define delta_tower2_y -COS_60*DELTA_RADIUS
+//#define delta_tower3_x 0.0 // back middle tower
+//#define delta_tower3_y DELTA_RADIUS
 
 // Diagonal rod squared
 #define DELTA_DIAGONAL_ROD_2 pow(DELTA_DIAGONAL_ROD,2)
@@ -378,7 +378,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
   // these are the offsets to the probe relative to the extruder tip (Hotend - Probe)//Ztanzheng
   #define X_PROBE_OFFSET_FROM_EXTRUDER 0 
   #define Y_PROBE_OFFSET_FROM_EXTRUDER 14.0 
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -4.6 //-7.6
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER 0 //-7.6
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case

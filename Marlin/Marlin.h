@@ -211,6 +211,13 @@ extern float current_position[NUM_AXIS] ;
 extern float add_homeing[3];
 #ifdef DELTA
 extern float endstop_adj[3];
+extern float delta_r;
+extern float delta_tower1_x;
+extern float delta_tower1_y;
+extern float delta_tower2_x;
+extern float delta_tower2_y;
+extern float delta_tower3_x;
+extern float delta_tower3_y;
 #endif
 extern float min_pos[3];
 extern float max_pos[3];
