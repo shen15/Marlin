@@ -12,7 +12,6 @@
 #define _VSARDUINO_H_
 #define __AVR_ATmega1284p__
 #define __AVR_ATmega1284P__
-#define _VMDEBUG 1
 #define ARDUINO 106
 #define ARDUINO_MAIN
 #define __AVR__
@@ -62,7 +61,7 @@ extern "C" void __cxa_pure_virtual() {;}
 #define portOutputRegister(P)
 #define portInputRegister(P)
 #define portModeRegister(P)
-#include <..\Marlin\Marlin.pde>
+#include <..\Marlin\Marlin.ino>
 #include <..\Marlin\BlinkM.cpp>
 #include <..\Marlin\BlinkM.h>
 #include <..\Marlin\Configuration.h>
@@ -73,7 +72,6 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <..\Marlin\LiquidCrystalRus.cpp>
 #include <..\Marlin\LiquidCrystalRus.h>
 #include <..\Marlin\Marlin.h>
-#include <..\Marlin\Marlin.ino>
 #include <..\Marlin\MarlinSerial.cpp>
 #include <..\Marlin\MarlinSerial.h>
 #include <..\Marlin\Marlin_main.cpp>
@@ -93,7 +91,6 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <..\Marlin\SdVolume.h>
 #include <..\Marlin\Servo.cpp>
 #include <..\Marlin\Servo.h>
-#include <..\Marlin\boards.h>
 #include <..\Marlin\cardreader.cpp>
 #include <..\Marlin\cardreader.h>
 #include <..\Marlin\digipot_mcp4451.cpp>
@@ -101,19 +98,6 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <..\Marlin\dogm_lcd_implementation.h>
 #include <..\Marlin\fastio.h>
 #include <..\Marlin\language.h>
-#include <..\Marlin\language_an.h>
-#include <..\Marlin\language_ca.h>
-#include <..\Marlin\language_de.h>
-#include <..\Marlin\language_en.h>
-#include <..\Marlin\language_es.h>
-#include <..\Marlin\language_eu.h>
-#include <..\Marlin\language_fi.h>
-#include <..\Marlin\language_fr.h>
-#include <..\Marlin\language_it.h>
-#include <..\Marlin\language_nl.h>
-#include <..\Marlin\language_pl.h>
-#include <..\Marlin\language_pt.h>
-#include <..\Marlin\language_ru.h>
 #include <..\Marlin\motion_control.cpp>
 #include <..\Marlin\motion_control.h>
 #include <..\Marlin\pins.h>

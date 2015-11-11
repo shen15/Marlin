@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A0DFEF15-296B-4D11-89D8-92300334034A}</ProjectGuid>
+    <ProjectGuid>{F7D0FE22-08E8-4D01-BDB5-B4FD90298966}</ProjectGuid>
     <RootNamespace>Marlin</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -44,10 +44,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files\arduino-1.0.6\hardware\Sanguino\cores\arduino;C:\Program Files\arduino-1.0.6\hardware\Sanguino\variants\standard;F:\git\Marlin\Marlin;C:\Program Files\arduino-1.0.6\libraries\LiquidCrystal;C:\Program Files\arduino-1.0.6\libraries\LiquidCrystal\utility;C:\Program Files\arduino-1.0.6\libraries\SPI;C:\Program Files\arduino-1.0.6\libraries\SPI\utility;C:\Program Files\arduino-1.0.6\libraries\U8glib;C:\Program Files\arduino-1.0.6\libraries\U8glib\utility;C:\Program Files\arduino-1.0.6\libraries\Wire;C:\Program Files\arduino-1.0.6\libraries\Wire\utility;C:\Program Files\arduino-1.0.6\libraries;C:\Program Files\arduino-1.0.6\hardware\Sanguino\libraries;C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\default\debuggers;\\vmware-host\Shared Folders\文稿\Arduino\libraries;c:\program files\arduino-1.0.6\hardware\tools\avr\avr\include\;c:\program files\arduino-1.0.6\hardware\tools\avr\avr\include\avr\;c:\program files\arduino-1.0.6\hardware\tools\avr\avr\;c:\program files\arduino-1.0.6\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>F:\git\Marlin\Marlin\__vm\.Marlin.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Program Files\arduino-1.0.6\hardware\Sanguino\cores\arduino;C:\Program Files\arduino-1.0.6\hardware\Sanguino\variants\standard;F:\k800\Marlin;C:\Program Files\arduino-1.0.6\libraries\LiquidCrystal;C:\Program Files\arduino-1.0.6\libraries\LiquidCrystal\utility;C:\Program Files\arduino-1.0.6\libraries\SPI;C:\Program Files\arduino-1.0.6\libraries\SPI\utility;C:\Program Files\arduino-1.0.6\libraries\U8glib;C:\Program Files\arduino-1.0.6\libraries\U8glib\utility;C:\Program Files\arduino-1.0.6\libraries\Wire;C:\Program Files\arduino-1.0.6\libraries\Wire\utility;C:\Program Files\arduino-1.0.6\libraries;C:\Program Files\arduino-1.0.6\hardware\Sanguino\libraries;C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\default\debuggers;\\vmware-host\Shared Folders\文稿\Arduino\libraries;c:\program files\arduino-1.0.6\hardware\tools\avr\avr\include\;c:\program files\arduino-1.0.6\hardware\tools\avr\avr\include\avr\;c:\program files\arduino-1.0.6\hardware\tools\avr\avr\;c:\program files\arduino-1.0.6\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>F:\k800\Marlin\__vm\.Marlin.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>__AVR_ATmega1284p__;__AVR_ATmega1284P__;_VMDEBUG=1;ARDUINO=106;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_ATMEGA1284;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__AVR_ATmega1284p__;__AVR_ATmega1284P__;ARDUINO=106;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_ATMEGA1284;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -68,18 +68,120 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="Marlin.ino">
+    <None Include="._Marlin.ino">
       <FileType>CppCode</FileType>
     </None>
-    <None Include="Marlin.pde">
+    <None Include="Marlin.ino">
       <FileType>CppCode</FileType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BlinkM.h">
+    <ClInclude Include="._BlinkM.h">
       <FileType>CppCode</FileType>
     </ClInclude>
-    <ClInclude Include="boards.h">
+    <ClInclude Include="._cardreader.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._ConfigurationStore.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._Configuration_adv.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._DOGMbitmaps.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._dogm_font_data_marlin.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._dogm_lcd_implementation.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._fastio.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._language.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._LiquidCrystalRus.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._Marlin.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._MarlinSerial.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._motion_control.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._pins.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._planner.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._qr_solve.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._Sd2Card.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._Sd2PinMap.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdBaseFile.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdFatConfig.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdFatStructs.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdFatUtil.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdFile.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdInfo.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._SdVolume.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._Servo.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._speed_lookuptable.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._stepper.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._temperature.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._thermistortables.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._ultralcd.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._ultralcd_implementation_hitachi_HD44780.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._ultralcd_st7920_u8glib_rrd.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._vector_3.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="._watchdog.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="BlinkM.h">
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClInclude Include="cardreader.h">
@@ -107,45 +209,6 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClInclude Include="language.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_an.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_ca.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_de.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_en.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_es.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_eu.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_fi.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_fr.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_it.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_nl.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_pl.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_pt.h">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="language_ru.h">
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClInclude Include="LiquidCrystalRus.h">
@@ -229,6 +292,26 @@
     <ClInclude Include="__vm\.Marlin.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="._BlinkM.cpp" />
+    <ClCompile Include="._cardreader.cpp" />
+    <ClCompile Include="._ConfigurationStore.cpp" />
+    <ClCompile Include="._digipot_mcp4451.cpp" />
+    <ClCompile Include="._LiquidCrystalRus.cpp" />
+    <ClCompile Include="._MarlinSerial.cpp" />
+    <ClCompile Include="._motion_control.cpp" />
+    <ClCompile Include="._planner.cpp" />
+    <ClCompile Include="._qr_solve.cpp" />
+    <ClCompile Include="._Sd2Card.cpp" />
+    <ClCompile Include="._SdBaseFile.cpp" />
+    <ClCompile Include="._SdFatUtil.cpp" />
+    <ClCompile Include="._SdFile.cpp" />
+    <ClCompile Include="._SdVolume.cpp" />
+    <ClCompile Include="._Servo.cpp" />
+    <ClCompile Include="._stepper.cpp" />
+    <ClCompile Include="._temperature.cpp" />
+    <ClCompile Include="._ultralcd.cpp" />
+    <ClCompile Include="._vector_3.cpp" />
+    <ClCompile Include="._watchdog.cpp" />
     <ClCompile Include="BlinkM.cpp" />
     <ClCompile Include="cardreader.cpp" />
     <ClCompile Include="ConfigurationStore.cpp" />
@@ -256,7 +339,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties arduino.upload.maximum_size="63488" arduino.upload.speed="19200" visualmicro.package.name="marlin" arduino.board.property_bag="name=Sanguino w/ ATmega1284p 16MHz&#xD;&#xA;upload.tool=ardunio:avrdude&#xD;&#xA;upload.protocol=stk500&#xD;&#xA;upload.maximum_size=63488&#xD;&#xA;upload.speed=19200&#xD;&#xA;bootloader.low_fuses=0xFF&#xD;&#xA;bootloader.high_fuses=0x9A&#xD;&#xA;bootloader.extended_fuses=0xFF&#xD;&#xA;bootloader.path=atmega&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega644p&#xD;&#xA;build.f_cpu=8000000L&#xD;&#xA;build.board=AVR_SANGUINO&#xD;&#xA;build.core=arduino:arduino&#xD;&#xA;build.variant=sanguino&#xD;&#xA;menu.cpu.atmega644=ATmega644P&#xD;&#xA;menu.cpu.atmega644.upload.maximum_size=63488&#xD;&#xA;menu.cpu.atmega644.bootloader.low_fuses=0xFF&#xD;&#xA;menu.cpu.atmega644.bootloader.high_fuses=0x9A&#xD;&#xA;menu.cpu.atmega644.bootloader.extended_fuses=0xFF&#xD;&#xA;menu.cpu.atmega644.bootloader.file=ATmegaBOOT_168_atmega644p.hex&#xD;&#xA;menu.cpu.atmega644.build.mcu=atmega644p&#xD;&#xA;menu.cpu.atmega12848m=ATmega1284p 8MHz&#xD;&#xA;menu.cpu.atmega12848m.upload.speed=19200&#xD;&#xA;menu.cpu.atmega12848m.bootloader.file=ATmegaBOOT_168_atmega1284p_8m.hex&#xD;&#xA;menu.cpu.atmega12848m.build.f_cpu=8000000L&#xD;&#xA;menu.cpu.atmega1284=ATmega1284p 16MHz&#xD;&#xA;menu.cpu.atmega1284.bootloader.file=ATmegaBOOT_168_atmega1284p.hex&#xD;&#xA;menu.cpu.atmega1284m=ATmega1284p 20MHz&#xD;&#xA;menu.cpu.atmega1284m.bootloader.file=ATmegaBOOT_168_atmega1284p.hex&#xD;&#xA;menu.cpu.atmega1284m.build.f_cpu=20000000L&#xD;&#xA;runtime.ide.path=C:\Program Files\Arduino&#xD;&#xA;build.system.path=C:\Program Files\Arduino\hardware\marlin\system&#xD;&#xA;runtime.ide.version=105&#xD;&#xA;target_package=marlin&#xD;&#xA;target_platform=avr&#xD;&#xA;runtime.hardware.path=C:\Program Files\Arduino\hardware&#xD;&#xA;originalid=sanguino&#xD;&#xA;version=1.5.6&#xD;&#xA;vm.platform.root.path=C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\arduino10x&#xD;&#xA;bootloader.file=ATmegaBOOT_168_atmega1284p.hex&#xD;&#xA;ide.hint=For use with Arduino 0023 and 1.0.x versions&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=C:\Program Files\Arduino\hardware\sanguino\cores\arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;vm.boardsource.path=C:\Program Files\Arduino\hardware\marlin&#xD;&#xA;runtime.platform.path=C:\Program Files\Arduino\hardware\marlin&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;vm.runtime.compiler.showwarnings=false&#xD;&#xA;serial.port.file=COM3&#xD;&#xA;serial.port=COM3&#xD;&#xA;serial.port.num=3&#xD;&#xA;build.source.path=F:\Marlin\Marlin\Marlin.pde&#xD;&#xA;compiler.path=C:\Program Files\Arduino\hardware\tools\avr\bin\&#xD;&#xA;extra.time.local=40760961&#xD;&#xA;includes= -I&quot;F:\Marlin\Marlin&quot;  -I&quot;C:\Program Files\Arduino\hardware\arduino\cores\arduino&quot;  -I&quot;C:\Program Files\Arduino\hardware\marlin\variants\sanguino&quot;  -I&quot;C:\Program Files\Arduino\libraries\LiquidCrystal&quot;  -I&quot;C:\Program Files\Arduino\libraries\SPI&quot;  -I&quot;C:\Program Files\Arduino\hardware\marlin\libraries\U8glib&quot;  -I&quot;C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\default\debuggers\VM_DBG&quot;  -I&quot;C:\Program Files\Arduino\libraries\Wire&quot;  -I&quot;C:\Program Files\Arduino\libraries&quot;  -I&quot;C:\Program Files\Arduino\hardware\arduino\libraries&quot;  -I&quot;C:\Program Files\Arduino\hardware\marlin\libraries&quot;  -I&quot;C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\default\debuggers&quot;  -I&quot;C:\Program Files\Arduino\hardware\sanguino\cores\arduino\libraries&quot;  -I&quot;C:\Program Files\Arduino\hardware\marlin\libraries\U8glib\utility&quot; -I&quot;C:\Program Files\Arduino\libraries\Wire\utility&quot;&#xD;&#xA;build.path=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\sanguino_atmega1284&#xD;&#xA;build.project_name=Marlin&#xD;&#xA;build.variant.path=C:\Program Files\Arduino\hardware\marlin\variants\sanguino&#xD;&#xA;build.core.path=C:\Program Files\Arduino\hardware\arduino\cores\arduino&#xD;&#xA;archive_file=core.a&#xD;&#xA;archive_file_path=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\sanguino_atmega1284\core.a&#xD;&#xA;build.path_sketch=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\sanguino_atmega1284&#xD;&#xA;build.path_core=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\sanguino_atmega1284&#xD;&#xA;build.path_libraries=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\sanguino_atmega1284&#xD;&#xA;object_file=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\sanguino_atmega1284\Wire\utility\twi.c.o&#xD;&#xA;source_file=C:\Program Files\Arduino\libraries\Wire\utility\twi.c&#xD;&#xA;build.architecture=avr&#xD;&#xA;vmresolved.compiler.path=C:\Program Files\Arduino\hardware\tools\avr\bin\&#xD;&#xA;vmresolved.tools.path=C:\Program Files\Arduino\hardware\tools\avr&#xD;&#xA;" visualmicro.application.name="arduino10x" arduino.build.mcu="atmega644p" arduino.upload.protocol="stk500" arduino.build.f_cpu="8000000L" arduino.board.desc="Sanguino w/ ATmega1284p 16MHz" arduino.board.name="sanguino_atmega1284" visualmicro.platform.name="avr" arduino.build.core="arduino" />
+      <UserProperties arduino.upload.maximum_size="131072" arduino.upload.speed="57600" visualmicro.package.name="Sanguino" arduino.board.property_bag="bootloader.low_fuses=0xD6&#xD;&#xA;bootloader.high_fuses=0xDA&#xD;&#xA;bootloader.extended_fuses=0xFD&#xD;&#xA;name=Sanguino W/ ATmega1284p 16mhz&#xD;&#xA;upload.protocol=stk500&#xD;&#xA;upload.maximum_size=131072&#xD;&#xA;upload.speed=57600&#xD;&#xA;bootloader.path=atmega&#xD;&#xA;bootloader.file=ATmegaBOOT_168_atmega1284p.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega1284p&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=standard&#xD;&#xA;runtime.ide.path=C:\Program Files\arduino-1.0.6&#xD;&#xA;build.system.path=C:\Program Files\arduino-1.0.6\hardware\Sanguino\system&#xD;&#xA;runtime.ide.version=106&#xD;&#xA;target_package=Sanguino&#xD;&#xA;target_platform=avr&#xD;&#xA;runtime.hardware.path=C:\Program Files\arduino-1.0.6\hardware&#xD;&#xA;originalid=atmega1284&#xD;&#xA;vm.platform.root.path=C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\arduino10x&#xD;&#xA;ide.hint=For use with Arduino 0023 and 1.0.x versions&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=\\vmware-host\Shared Folders\文稿\Arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;build.board=AVR_ATMEGA1284&#xD;&#xA;vm.boardsource.path=C:\Program Files\arduino-1.0.6\hardware\Sanguino&#xD;&#xA;runtime.platform.path=C:\Program Files\arduino-1.0.6\hardware\Sanguino&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;vm.runtime.compiler.showwarnings=false&#xD;&#xA;serial.port.file=COM3&#xD;&#xA;serial.port=COM3&#xD;&#xA;serial.port.num=3&#xD;&#xA;build.source.path=F:\Marlin\Marlin\Marlin.pde&#xD;&#xA;compiler.path=C:\Program Files\arduino-1.0.6\hardware\tools\avr\bin\&#xD;&#xA;extra.time.local=35322083&#xD;&#xA;includes= -I&quot;F:\Marlin\Marlin&quot;  -I&quot;C:\Program Files\arduino-1.0.6\hardware\Sanguino\cores\arduino&quot;  -I&quot;C:\Program Files\arduino-1.0.6\hardware\Sanguino\variants\standard&quot;  -I&quot;C:\Program Files\arduino-1.0.6\libraries\LiquidCrystal&quot;  -I&quot;C:\Program Files\arduino-1.0.6\libraries\SoftwareSerial&quot;  -I&quot;C:\Program Files\arduino-1.0.6\libraries\SPI&quot;  -I&quot;C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\default\debuggers\VM_DBG&quot;  -I&quot;C:\Program Files\arduino-1.0.6\libraries\Wire&quot;  -I&quot;C:\Program Files\arduino-1.0.6\libraries&quot;  -I&quot;C:\Program Files\arduino-1.0.6\hardware\Sanguino\libraries&quot;  -I&quot;C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\gqo1azx0.1xz\Micro Platforms\default\debuggers&quot;  -I&quot;\\vmware-host\Shared Folders\文稿\Arduino\libraries&quot;  -I&quot;C:\Program Files\arduino-1.0.6\libraries\Wire\utility&quot;&#xD;&#xA;build.path=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284&#xD;&#xA;build.project_name=Marlin&#xD;&#xA;build.variant.path=C:\Program Files\arduino-1.0.6\hardware\Sanguino\variants\standard&#xD;&#xA;build.core.path=C:\Program Files\arduino-1.0.6\hardware\Sanguino\cores\arduino&#xD;&#xA;archive_file=core.a&#xD;&#xA;archive_file_path=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\core.a&#xD;&#xA;build.path_sketch=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284&#xD;&#xA;build.path_core=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284&#xD;&#xA;build.path_libraries=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284&#xD;&#xA;object_file=C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\WString.cpp.o&#xD;&#xA;source_file=C:\Program Files\arduino-1.0.6\hardware\Sanguino\cores\arduino\WString.cpp&#xD;&#xA;object_files=&quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\Marlin.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\BlinkM.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\cardreader.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\ConfigurationStore.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\digipot_mcp4451.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\LiquidCrystalRus.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\Marlin_main.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\MarlinSerial.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\motion_control.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\planner.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\qr_solve.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\Sd2Card.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\SdBaseFile.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\SdFatUtil.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\SdFile.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\SdVolume.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\Servo.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\stepper.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\temperature.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\ultralcd.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\vector_3.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\watchdog.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\LiquidCrystal\LiquidCrystal.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\SoftwareSerial\SoftwareSerial.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\SPI\SPI.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\VM_DBG\VM_mem_check.c.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\VM_DBG\VM_DBG.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\Wire\Wire.cpp.o&quot; &quot;C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\Marlin\atmega1284\Wire\utility\twi.c.o&quot; &#xD;&#xA;build.architecture=avr&#xD;&#xA;vmresolved.compiler.path=C:\Program Files\arduino-1.0.6\hardware\tools\avr\bin\&#xD;&#xA;vmresolved.tools.path=C:\Program Files\arduino-1.0.6\hardware\tools\avr&#xD;&#xA;" visualmicro.application.name="arduino10x" arduino.build.mcu="atmega1284p" arduino.upload.protocol="stk500" arduino.build.f_cpu="16000000L" arduino.board.desc="Sanguino W/ ATmega1284p 16mhz" arduino.board.name="atmega1284" visualmicro.platform.name="avr" arduino.build.core="arduino" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
